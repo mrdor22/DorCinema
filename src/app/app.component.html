@@ -1,0 +1,16 @@
+<div  class="container-fluid" (onActivate) = "onActivate()">
+    <app-navbar> </app-navbar>
+    <app-slider *ngIf="!router.url.includes(checkUrl())"></app-slider>
+    <app-movie-list *ngIf="!router.url.includes(checkUrl())"></app-movie-list>
+    <router-outlet></router-outlet>
+<app-footer></app-footer>
+</div>
+
+
+
+
+
+
+
+
+<!-- <app-slider  ></app-slider> -->

@@ -1,0 +1,66 @@
+
+
+
+
+
+
+<div class="container" style="height: 600px;" >
+  <div class="cellphone-container">
+    <div class="row">
+      <div class="col-md-4">
+
+        
+        <a (click)="getCurrentMovie(singleMovie)"  >
+          
+          <div class="movie">
+            <div class="menu"><i class="material-icons" style="color: yellow; padding-top: 1rem;"></i></div>
+            <div class="movie-img">
+              <img
+              class="movie-img"
+              *ngIf="singleMovie?.poster_path"
+              height="400px"
+              
+              style=" width: 100%"
+              src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{
+                singleMovie?.poster_path
+              }}"
+              (error)="onImgError()" 
+              />
+            </div>
+            <br>
+            <div class="text-movie-cont" style="text-align: center;">
+              <div class="mr-grid">
+                <div class="col-xs-12" >
+                  <br>
+                  <h1 class="dor-title">{{singleMovie.title}}</h1>
+                  <br>
+                  <br>
+                  <ul class="movie-gen" style="padding-right: 4rem;" >
+                    <li > {{singleMovie.release_date}} |</li>
+                    <i class="pi pi-star" style="color: yellow; font-size: 1.8rem;"></i>
+                    
+                    <li>{{ singleMovie.vote_average}}/ 10</li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <br>
+              
+              
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+

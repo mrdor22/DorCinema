@@ -1,0 +1,14 @@
+* {
+  background-image: url(https://boostifythemes.com/demo/wp/buster/wp-content/uploads/2017/10/footer-bg.jpg);
+  background-position: center;
+  font-family: "Anton", sans-serif;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+}
+
+.dor {
+  color: black;
+}

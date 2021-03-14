@@ -1,0 +1,122 @@
+.movie { transition: all 0.5s }
+.movie:hover { transform: scale(1.1);
+  border: 1px solid white;
+}
+
+ body {
+	 background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)), url("https://i.ibb.co/FDGqCmM/papers-co-ag74-interstellar-wide-space-film-movie-art-33-iphone6-wallpaper.jpg");
+	 background-position: center;
+	 background-size: cover;
+	 background-repeat: repeat;
+}
+ .container {
+	 width: 100%;
+	 height: 100%;
+}
+ .cellphone-container {
+	 width: 375px;
+	 background-color: #734be2;
+	 margin: 60px auto 0 auto;
+}
+ .menu {
+	 position: absolute;
+	 right: 12px;
+	 top: 6px;
+}
+ .menu i {
+	 font-size: 40px;
+	 color: #fe4141;
+	 filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, .5));
+}
+ .movie-img {
+	 width: 100%;
+	 background-position: center;
+	 background-repeat: no-repeat;
+   background-size: cover;
+   min-width: 300px;
+   min-height: 200px;
+}
+ .movie {
+	 background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.06) 39%, rgba(30, 27, 38, 0.88) 53%, rgba(30, 27, 38, 1) 55%);
+	 background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.06) 39%, rgba(30, 27, 38, 0.88) 53%, rgba(30, 27, 38, 1) 55%);
+	 background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.06) 39%, rgba(30, 27, 38, 0.88) 53%, rgba(30, 27, 38, 1) 55%);
+	 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#1e1b26',GradientType=0);
+	 position: absolute;
+	 background-size: contain;
+	 background-size: cover;
+	 z-index: 1 !important;
+	 height: 570px;
+	 width: 375px;
+	 display: block;
+}
+ .text-movie-cont {
+	 width: auto;
+	 padding: 0px 12px;
+	 text-align: justify;
+}
+ .action-btn {
+	 text-align: right;
+}
+ .action-btn i {
+	 color: #fe4141;
+	 font-size: 28px;
+	 text-align: right;
+}
+ .watch-btn {
+	 display: block;
+	 border: 1px solid #fe4141;
+	 border-radius: 5px;
+	 padding: 4px;
+	 width: 140px;
+}
+ .watch-btn h3 i {
+	 font-size: 14px;
+	 margin-right: 2px;
+	 position: relative;
+	 float: left;
+	 line-height: 1;
+}
+ .action-row {
+	 margin-top: 24px;
+}
+ .summary-row {
+	 margin-top: 12px;
+}
+ h1, h2, h3, h4, h5 {
+	 font-family: 'Anton' sans-serif;
+  	 color: #e7e7e7;
+	 margin: 0px;
+}
+ h1 {
+	 font-size: 6px;
+	 font-weight: 400;
+}
+
+
+.dor-title { 
+  font-size: 2rem;
+text-align: center;
+color: white;
+margin: 0;}
+
+ h3 {
+	 font-size: 14px;
+	 font-weight: 400;
+	 color: #fe4141;
+}
+ h5 {
+	 font-size: 12px;
+	 font-weight: 400;
+}
+
+ .movie-gen li, .movie-likes li {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+   text-align: center;
+	 color: #ffffff;
+	 width: auto;
+	 display: inline-block;
+	 margin-right: 6px;
+	 font-weight: 600;
+}
+

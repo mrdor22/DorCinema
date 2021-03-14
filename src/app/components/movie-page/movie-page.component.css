@@ -1,0 +1,240 @@
+* {
+  color: white;
+  line-height: 22px;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+h2 {
+  line-height: 20px;
+  overflow: hidden;
+}
+#number {
+  color: rgb(224, 221, 45);
+}
+
+td {
+  font-size: 2rem;
+  text-align: center !important;
+}
+
+p {
+  line-height: 36px;
+  font-size: 2.5rem;
+  overflow: visible;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 500px;
+}
+
+.section-title {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+h2 {
+  color: yellow;
+  margin-top: 155px;
+  text-align: center;
+  padding-top: 10px;
+  overflow: visible;
+  padding-bottom: 25px;
+  font-size: 4.5rem;
+  letter-spacing: 2px;
+}
+
+.col-sm-3 {
+  text-align: center;
+}
+
+.wp2 {
+  font-size: 2rem;
+}
+@media screen and (max-width: 400px) {
+  img {
+    max-width: 500px;
+  }
+}
+
+.hr {
+  color: #2c3e50;
+}
+
+.text-color {
+  text-align: center;
+}
+
+.detailed {
+  overflow: hidden;
+}
+
+* {
+  overflow-x: hidden;
+}
+
+#movie-player {
+  position: relative;
+  background-size: cover;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+  .dor {
+    padding-left: 260px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  /* styles for browsers larger than 1440px; */
+  .dor {
+    padding-left: 460px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* styles for browsers larger than 1440px; */
+  .dor {
+    padding-left: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.movie-player {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.dorhover {
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.mrdor {
+  transition: all 0.2s ease-in;
+  margin-bottom: 20px;
+}
+.mrdor:hover {
+  transform: scale(1.1);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.spinner {
+  z-index: 100;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.imgg {
+  width: 100%;
+  background-size: cover;
+}
+
+body {
+  image-rendering: auto;
+}
+
+.arrow {
+  margin-top: 400px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.1s;
+  /* width: 80px; */
+  overflow: hidden;
+}
+.arrow-top,
+.arrow-bottom {
+  background-color: #666;
+  height: 4px;
+  left: -5px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.arrow-top:after,
+.arrow-bottom:after {
+  background-color: #fff;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.15s;
+}
+.arrow-top {
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+.arrow-top:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0s;
+}
+.arrow-bottom {
+  transform: rotate(-45deg);
+  transform-origin: top right;
+}
+.arrow-bottom:after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0.15s;
+}
+.arrow:hover .arrow-top:after {
+  left: 0;
+  transition-delay: 0.15s;
+}
+.arrow:hover .arrow-bottom:after {
+  right: 0;
+  transition-delay: 0s;
+}
+.arrow:active {
+  transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+
+@media screen and (max-width: 500px) {
+  .overview,
+  .imgg {
+    width: auto;
+    font-size: 2.3rem;
+    height: 300px;
+  }
+}
+
+.movieTitle {
+  line-height: 5rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.title,
+span {
+  padding-bottom: 70px;
+}
+
+td {
+  overflow: hidden;
+}

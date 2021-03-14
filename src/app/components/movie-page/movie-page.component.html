@@ -1,0 +1,167 @@
+
+       <br>
+       <br><br>
+       <br>
+       <br>
+ 
+
+      <div class="container-fluid" style="padding: 0 !important;">
+        <div class="row " >
+          <div class="col-lg-12">
+            
+            <img class="imgg"
+            
+            src="https://image.tmdb.org/t/p/original/{{
+              singleMovieInfo?.backdrop_path
+            }}"
+            height="780px"
+            width="75%"
+            style="overflow: hidden;"
+            alt="movie img"
+            />
+          </div>
+       
+            <div class="col-lg-6 ">
+              
+              
+              <h2 class="movieTitle"   style="padding-top: 60px;">  {{ singleMovieInfo?.title }}</h2>
+              <h5 class="sub-text"  style="text-align: center; color: grey;">
+                Release Date: {{ singleMovieInfo?.release_date }}
+              </h5>
+              <div class="table" >
+                <tbody  >
+                  <tr></tr>
+                  
+                  <tr>
+                    <td >Genre</td>
+                    <td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</td>
+                    <td style="color: yellow;">{{ singleMovieInfo?.genres[0].name }}</td>
+                  </tr>
+                  
+                  <!-- <tr>
+                    <td>Time</td>
+                    <td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</td>
+                    <td id="number">{{ singleMovieInfo.runtime }} <span style="color: yellow;">Minutes</span></td>
+                  </tr> -->
+                  
+                  <tr>
+                    <td>Language</td>
+                    <td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</td>
+                    <td style="color: yellow;">{{ singleMovieInfo.spoken_languages[0].name }}</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Age</td>
+                    <td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</td>
+                    <td><span class="detailed-text" id="number">16+</span></td>
+                  </tr>          
+            
+                </tbody>
+              </div>
+              <br />
+              
+              <div class="col-xs-12">
+              <p class="overview" style="text-align: center; overflow: hidden;  height: 120%;" >
+                {{ singleMovieInfo.overview }}
+                <br />
+              </p>
+            </div>
+              <div class="detailed" style="text-align: center;">
+                <br>
+                <br>
+                <span style="font-size: 2rem;">
+                  Rating:&nbsp;&nbsp;
+                </span>
+       
+                <span class="rate"
+                ><i class="pi pi-star" style="color: yellow; font-size: 2rem;"></i
+                  ></span>
+                  
+                  <span id="number"
+                  >&nbsp;<b style="padding-left: 10px; font-size: 2rem; color: yellow;text-align:center">{{
+                    singleMovieInfo.vote_average
+                  }}</b></span
+                  >
+                </div>
+                <p></p>
+              </div>
+
+
+
+
+              
+      
+              <div class="col-lg-6" >
+
+          
+                  <p-progressSpinner *ngIf = "!spinner" style="overflow: hidden;" class="spinner" styleClass="custom-spinner" strokeWidth="15"  animationDuration="1.11s">
+                  </p-progressSpinner>
+                  <div class="col-sm-12   animated fadeInUp" style="padding-top: 115px; overflow: hidden;">
+                
+                    <div class="title">  
+                    <span style="color: yellow;"> Watch</span> <span > Trailer</span>
+                  </div>
+         
+                    
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe style="overflow: hidden;"
+                      [src]="src | safe"
+                      width="420"
+                      height="315"
+                      frameborder="20"
+                      ></iframe>
+                    </div>
+            <br />
+            <br />
+          </div>
+
+
+
+
+              </div>
+            </div>
+          </div>
+          
+          
+          <br>
+          <br>
+          
+          <hr class="dorhr">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+  <div class="wrapper">
+  
+    <br />
+    <h1 style="overflow: hidden; color: white; font-size: 4.5rem; text-align: center; padding-top: 50px; text-transform: uppercase;" >
+You <span style="color: yellow; ">might</span>  like :
+<br>
+<br>
+
+    </h1>
+    <p-progressSpinner style="overflow: hidden;" *ngIf = "!spinner" class="spinner" styleClass="custom-spinner" strokeWidth="15"  animationDuration="1.11s"></p-progressSpinner>
+
+    <p-carousel
+    
+    [value]="mightLike"
+    [numVisible]="8"
+    [numScroll]="2"
+    [circular]="true"
+    [autoplayInterval]="2500"
+    [responsiveOptions]="responsiveOptions"
+    >
+    <ng-template let-movie pTemplate="item" >
+      <app-single-movie
+      
+      [singleMovie]="movie"
+      ></app-single-movie>
+    </ng-template>
+  </p-carousel>
+</div>

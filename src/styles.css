@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.pi {
+    font-family: 'primeicons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+}
+
+
+.navbar {
+    margin-bottom: 20px !important;
+}
+
+
+* {
+    font-family: 'Anton', sans-serif;
+}
+
+body { 
+    background-image: url(https://boostifythemes.com/demo/wp/buster/wp-content/uploads/2017/10/footer-bg.jpg);
+    background-position: center;
+}
+
+
+

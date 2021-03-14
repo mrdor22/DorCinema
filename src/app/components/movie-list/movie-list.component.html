@@ -1,0 +1,97 @@
+<div class="container-fluid">
+  <div class="wrapper">
+    <br />
+    <br /><br />
+    <h1 style="color: white; font-size: 4.5rem; text-align: center">
+      <hr />
+      <br />
+      Top <span style="color: yellow"> Movies</span>
+    </h1>
+    <br />
+    <p-progressSpinner
+      *ngIf="!spinner"
+      class="spinner"
+      styleClass="custom-spinner"
+      strokeWidth="15"
+      animationDuration="1.11s"
+    ></p-progressSpinner>
+
+    <p-carousel
+      [value]="topMovies"
+      [numVisible]="8"
+      [numScroll]="2"
+      [circular]="true"
+      [autoplayInterval]="2500"
+      [responsiveOptions]="responsiveOptions"
+    >
+      <ng-template let-movie pTemplate="item">
+        <app-single-movie [singleMovie]="movie"></app-single-movie>
+      </ng-template>
+    </p-carousel>
+  </div>
+  <br />
+
+  <div class="wrapper">
+    <br />
+    <br /><br />
+    <h1 style="color: white; font-size: 4.5rem; text-align: center">
+      <hr />
+      <br />
+      Famous <span style="color: yellow"> Movies</span>
+    </h1>
+    <br />
+    <p-progressSpinner
+      *ngIf="!spinner"
+      class="spinner"
+      styleClass="custom-spinner"
+      strokeWidth="15"
+      animationDuration="1.11s"
+    ></p-progressSpinner>
+
+    <p-carousel
+      [value]="PopularMovies"
+      [numVisible]="8"
+      [numScroll]="2"
+      [circular]="true"
+      [autoplayInterval]="2500"
+      [responsiveOptions]="responsiveOptions"
+    >
+      <ng-template let-movie pTemplate="item">
+        <app-single-movie [singleMovie]="movie"></app-single-movie>
+      </ng-template>
+    </p-carousel>
+  </div>
+  <br />
+
+  <div class="wrapper">
+    <br />
+    <br /><br />
+    <hr />
+    <br />
+    <h1 style="color: white; font-size: 4.5rem; text-align: center">
+      Coming <span style="color: yellow"> Soon</span>
+    </h1>
+    <br />
+
+    <p-progressSpinner
+      *ngIf="!spinner"
+      class="spinner"
+      styleClass="custom-spinner"
+      strokeWidth="15"
+      animationDuration="1.11s"
+    ></p-progressSpinner>
+    <p-carousel
+      [value]="ComingSoon"
+      [numVisible]="8"
+      [numScroll]="2"
+      [circular]="true"
+      [autoplayInterval]="2500"
+      [responsiveOptions]="responsiveOptions"
+    >
+      <ng-template let-movie pTemplate="item">
+        <app-single-movie [singleMovie]="movie"></app-single-movie>
+      </ng-template>
+    </p-carousel>
+  </div>
+  <br />
+</div>

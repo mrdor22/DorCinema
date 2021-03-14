@@ -1,0 +1,51 @@
+
+
+  <div class="container" style="width: 100%;"></div>
+    <div class="row"  >
+      
+      <div class="col-xs-12 " >
+        <ng-container *ngFor="let slider of movies; let i = index">
+          <div *ngIf="current == i">
+      <div class="imgplace" style="height: 10%;" >
+        <img
+     [style]="{'height': '960px'}"
+
+        class="img-fluid dorimg"
+        width="100%"
+          alt="{{ slider?.title }}"
+          src="https://image.tmdb.org/t/p/original/{{ slider?.backdrop_path }}"
+        />
+      </div>
+      <div class="row">
+ 
+        <div class="centered">
+          <!-- <h1 class="font-weight-heavy" style="color: rgb(255, 255, 255); width: 100%;" >{{slider.title}}</h1>
+                        <p  style="font-size: 2.2rem; color: rgba(255, 255, 255, 1); text-align: center; ">{{slider.overview | maxLength: "175"}}</p> -->
+          <div class="centerBox">
+            <div class="categoryWrapper" style="padding-bottom: 4rem;">
+              
+                <h1 class="font-weight-heavy" style="color: rgb(255, 255, 255); width: 100%;" style="font-size: 3.5rem;"  >{{slider.title}}</h1>
+                <br>
+                <br>
+              <button  placeholder="Watch Trailer" (click)="getCurrentMovie(slider)">
+                <span>
+                  <span>
+                    <span data-attr-span="Watch Trailer">
+						Watch Trailer
+					</span>
+
+                </span>
+                  </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
+</div>
+
+
+
+

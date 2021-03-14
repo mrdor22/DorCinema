@@ -1,0 +1,119 @@
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="container-fluid" style="width: 75%">
+  <div class="row">
+    <div class="col-xs-12">
+      <br />
+
+      <p-dropdown
+        class="dorr"
+        [style]="{ width: '10%', 'border-raduis': '33px' }"
+        (onChange)="onChange(genre)"
+        [options]="genreList"
+        [(ngModel)]="genre"
+        placeholder="Select Genre"
+        optionLabel="name"
+      ></p-dropdown>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <div *ngFor="let default of PopularMovies | slice: 0:18">
+        <div
+          *ngIf="!this.selected"
+          class="col-xs-12 movie"
+          style="margin: 15px; overflow: hidden"
+        >
+          <div class="movie-img">
+            <!-- <a routerLink ="['/movies/', default.id]"> -->
+
+            <img
+              (click)="getCurrentMovie2(default)"
+              class="movie-img"
+              *ngIf="default?.poster_path"
+              height="360px"
+              width="111%"
+              src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{
+                default?.poster_path
+              }}"
+            />
+            <!-- </a> -->
+          </div>
+          <div class="text-movie-cont" style="text-align: center">
+            <div class="mr-grid">
+              <div class="col-xs-12">
+                <br />
+                <h1 class="dor-title">{{ default.title }}</h1>
+                <br />
+                <br />
+                <ul class="movie-gen" style="padding-right: 4rem">
+                  <li>{{ default.release_date }} |</li>
+                  <i
+                    class="pi pi-star"
+                    style="color: yellow; font-size: 1.8rem"
+                  ></i>
+
+                  <li>{{ default.vote_average }}/ 10</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+        </div>
+      </div>
+
+      <div
+        *ngFor="let y of selected | slice: 0:18"
+        style="justify-content: center"
+        class="col-xl-2 col-lg-3 col-md-6 col-xs-12"
+      >
+        <div
+          class="movie"
+          style="padding-bottom: 250px; padding-right: 20px"
+          style="margin-top: 50px"
+        >
+          <div class="movie-img">
+            <img
+              (click)="getCurrentMovie2(y)"
+              class="movie-img"
+              *ngIf="y?.poster_path"
+              height="360px"
+              src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{
+                y?.poster_path
+              }}"
+            />
+          </div>
+          <br />
+          <div class="text-movie-cont" style="text-align: center">
+            <div class="mr-grid">
+              <div class="col-lg-12">
+                <br />
+                <h1 class="dor-title">{{ y.title }}</h1>
+                <br />
+                <br />
+                <ul class="movie-gen" style="padding-right: 4rem">
+                  <li>{{ y.release_date }} |</li>
+                  <i
+                    class="pi pi-star"
+                    style="color: yellow; font-size: 1.8rem"
+                  ></i>
+
+                  <li>{{ y.vote_average }}/ 10</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
